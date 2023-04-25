@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3701A52986793600C2DB89 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3701A42986793600C2DB89 /* UIView.swift */; };
+		8D3701A729867D0C00C2DB89 /* MyUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3701A629867D0C00C2DB89 /* MyUIButton.swift */; };
+		8D72277F2986BB12009BD85E /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72277E2986BB12009BD85E /* UIStackView.swift */; };
+		8D7227822986C6CC009BD85E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7227812986C6CC009BD85E /* MainView.swift */; };
+		8D7227842986D12F009BD85E /* ButtonLogicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7227832986D12F009BD85E /* ButtonLogicable.swift */; };
+		8D7227872986D659009BD85E /* MyUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7227862986D659009BD85E /* MyUITextField.swift */; };
 		8DCA70B62980ED5400A386C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA70B52980ED5400A386C5 /* AppDelegate.swift */; };
 		8DCA70B82980ED5400A386C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA70B72980ED5400A386C5 /* SceneDelegate.swift */; };
 		8DCA70BA2980ED5400A386C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA70B92980ED5400A386C5 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D3701A42986793600C2DB89 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		8D3701A629867D0C00C2DB89 /* MyUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUIButton.swift; sourceTree = "<group>"; };
+		8D72277E2986BB12009BD85E /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		8D7227812986C6CC009BD85E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8D7227832986D12F009BD85E /* ButtonLogicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLogicable.swift; sourceTree = "<group>"; };
+		8D7227862986D659009BD85E /* MyUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITextField.swift; sourceTree = "<group>"; };
 		8DCA70B22980ED5400A386C5 /* IT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DCA70B52980ED5400A386C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DCA70B72980ED5400A386C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D7227802986BB23009BD85E /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				8D72277E2986BB12009BD85E /* UIStackView.swift */,
+				8D3701A42986793600C2DB89 /* UIView.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		8D7227852986D631009BD85E /* MyViews */ = {
+			isa = PBXGroup;
+			children = (
+				8D7227862986D659009BD85E /* MyUITextField.swift */,
+				8D3701A629867D0C00C2DB89 /* MyUIButton.swift */,
+			);
+			path = MyViews;
+			sourceTree = "<group>";
+		};
+		8D722788298707A7009BD85E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D7227812986C6CC009BD85E /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D722789298707C7009BD85E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DCA70B92980ED5400A386C5 /* ViewController.swift */,
+				8D7227832986D12F009BD85E /* ButtonLogicable.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8DCA70A92980ED5400A386C5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +103,14 @@
 		8DCA70B42980ED5400A386C5 /* IT */ = {
 			isa = PBXGroup;
 			children = (
-				8DCA70B52980ED5400A386C5 /* AppDelegate.swift */,
+				8D722788298707A7009BD85E /* Views */,
+				8D722789298707C7009BD85E /* Controllers */,
+				8D7227802986BB23009BD85E /* Extentions */,
+				8D7227852986D631009BD85E /* MyViews */,
 				8DCA70B72980ED5400A386C5 /* SceneDelegate.swift */,
-				8DCA70B92980ED5400A386C5 /* ViewController.swift */,
-				8DCA70BB2980ED5400A386C5 /* Main.storyboard */,
+				8DCA70B52980ED5400A386C5 /* AppDelegate.swift */,
 				8DCA70BE2980ED5600A386C5 /* Assets.xcassets */,
+				8DCA70BB2980ED5400A386C5 /* Main.storyboard */,
 				8DCA70C02980ED5600A386C5 /* LaunchScreen.storyboard */,
 				8DCA70C32980ED5600A386C5 /* Info.plist */,
 			);
@@ -139,8 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DCA70BA2980ED5400A386C5 /* ViewController.swift in Sources */,
+				8D7227822986C6CC009BD85E /* MainView.swift in Sources */,
+				8D72277F2986BB12009BD85E /* UIStackView.swift in Sources */,
+				8D3701A729867D0C00C2DB89 /* MyUIButton.swift in Sources */,
 				8DCA70B62980ED5400A386C5 /* AppDelegate.swift in Sources */,
+				8D7227872986D659009BD85E /* MyUITextField.swift in Sources */,
 				8DCA70B82980ED5400A386C5 /* SceneDelegate.swift in Sources */,
+				8D7227842986D12F009BD85E /* ButtonLogicable.swift in Sources */,
+				8D3701A52986793600C2DB89 /* UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
